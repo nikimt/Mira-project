@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  color: red;
+  top: 0px;
+  background-color: #0c1223;
+}
+
+
+.cardContainer {
+	top: 20%;
+	/*left: 20%;*/
+	position: absolute !important;
+	height: 70% !important;
+}
+
+.hiddenCard {
+	visibility: hidden;
+}
+
+.productCard {
+	height: 90% !important;
+}
+
+#likeButton {
+	background-color: #fa80ac;
+	color: #ffffff;
+}
+
+#dislikeButton {
+	background-color: #7a58ef;
+	color: #ffffff;
+}
