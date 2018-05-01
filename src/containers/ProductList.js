@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
-// import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import selectProductAction from '../actions/selectProductAction';
 import likeProduct from '../actions/likeProductAction';
 import dislikeProduct from '../actions/dislikeProductAction';
-import { Card, Icon, Image, Container, Segment, Button } from 'semantic-ui-react';
+import { Card, Icon, Image, Button } from 'semantic-ui-react';
 import connect from 'react-redux-fetch';
 import Swipeable from 'react-swipeable'
 
@@ -72,7 +71,7 @@ class ProductList extends Component {
                   onSwipedRight={this.onProductLiked.bind(this, product)}
                 >
                     <Card className='productCard' key={`product-${product.productId}`} raised="true">
-                        <Image src={product.imageUrl} />
+                        <Image centered src={product.imageUrl} />
                         <Card.Content>
                             <Card.Header>{product.name}</Card.Header>
                             <Card.Meta>{product.brand}</Card.Meta>
